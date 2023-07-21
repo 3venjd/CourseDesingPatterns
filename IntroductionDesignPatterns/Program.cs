@@ -1,13 +1,16 @@
 ﻿
 
 
-Person person1 = new Person("Evelio",31,"Colombian");
-Person person2 = new Person("Cristina", 37, "Colombian");
+SportyPerson person1 = new SportyPerson("Evelio",31,"Colombian");
+SportyPerson person2 = new SportyPerson("Cristina", 37, "Colombian");
 Console.WriteLine(person1.Show());
+person1.Run();
+
 Console.WriteLine(person2.Show());
 
 
-class Person
+//abstract especify functionality, qualities or properties but doesnt allow to create objects, just use in inheritance
+abstract class Person
 {
     public string name;
     public int age;
@@ -23,5 +26,19 @@ class Person
     public string Show()
     {
         return name + " " + age + " " + nationality;
+    }
+}
+
+class SportyPerson : Person
+{
+    public SportyPerson(string _name, int _age, string _nationality) : base(_name, _age, _nationality)
+    {
+
+    }
+
+
+    public void Run()
+    {
+        Console.WriteLine(name + " is running");
     }
 }
