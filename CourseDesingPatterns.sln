@@ -7,17 +7,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Introduction", "Introductio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{8EF91FE8-861B-4876-9088-8F4C29B75DD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionDesignPatterns", "Introduction\IntroductionDesignPatterns\IntroductionDesignPatterns.csproj", "{E9A92437-643F-4FE8-A0FE-5B0D2536F84B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroductionDesignPatterns", "Introduction\IntroductionDesignPatterns\IntroductionDesignPatterns.csproj", "{E9A92437-643F-4FE8-A0FE-5B0D2536F84B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Introduction\Interfaces\Interfaces.csproj", "{DA5809FB-DDFD-4732-85D7-5863EB57B2C2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonTheory", "Singleton\SinglentonTheory\SingletonTheory.csproj", "{015A01C5-B969-4EDB-B974-68465F2ABD9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonASP", "Singleton\SingletonASP\SingletonASP.csproj", "{ECD49E41-352B-4DD2-9142-80277C9DA1FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonASP", "Singleton\SingletonASP\SingletonASP.csproj", "{ECD49E41-352B-4DD2-9142-80277C9DA1FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{96DE2F21-16FF-4146-95B5-D9A1AC10899F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools\Tools.csproj", "{53DEF3E5-A18D-488F-97FE-153641CC98F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools\Tools.csproj", "{53DEF3E5-A18D-488F-97FE-153641CC98F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{E0BD9985-5695-4445-9955-159E2193DFCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory\Factory.csproj", "{CA6E7160-8E3D-4B8E-BF10-7C673F588BE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,10 @@ Global
 		{53DEF3E5-A18D-488F-97FE-153641CC98F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53DEF3E5-A18D-488F-97FE-153641CC98F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53DEF3E5-A18D-488F-97FE-153641CC98F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6E7160-8E3D-4B8E-BF10-7C673F588BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6E7160-8E3D-4B8E-BF10-7C673F588BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6E7160-8E3D-4B8E-BF10-7C673F588BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6E7160-8E3D-4B8E-BF10-7C673F588BE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{015A01C5-B969-4EDB-B974-68465F2ABD9F} = {8EF91FE8-861B-4876-9088-8F4C29B75DD5}
 		{ECD49E41-352B-4DD2-9142-80277C9DA1FD} = {8EF91FE8-861B-4876-9088-8F4C29B75DD5}
 		{53DEF3E5-A18D-488F-97FE-153641CC98F9} = {96DE2F21-16FF-4146-95B5-D9A1AC10899F}
+		{CA6E7160-8E3D-4B8E-BF10-7C673F588BE6} = {E0BD9985-5695-4445-9955-159E2193DFCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8D7D52FF-4389-44D4-B65A-4AF205EAEA08}
