@@ -40,7 +40,7 @@ namespace Factory
 
         public void Sell(decimal total)
         {
-            Console.WriteLine($"The sell in store has an amount of {total + _extra}");
+            Console.WriteLine($"The sell in store cost {total} with the extra {_extra} and the final total is {total + _extra}");
         }
     }
 
@@ -55,7 +55,7 @@ namespace Factory
 
         public override ISale GetSale()
         {
-            return new StoreSale(_discount);
+            return new InternetSale(_discount);
         }
     }
 
@@ -70,7 +70,7 @@ namespace Factory
 
         public void Sell(decimal total)
         {
-            Console.WriteLine($"The sell in internet has an amount of {total - _discount}");
+            Console.WriteLine($"The sell in store cost {total} with the discount {_discount} and the final total is {total - _discount}");
         }
     }
 
