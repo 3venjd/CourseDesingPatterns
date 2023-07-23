@@ -1,4 +1,4 @@
-﻿namespace SingletonASP.Configuration
+﻿namespace DesingPatternsASP.Configuration
 {
     public class MyConfig
     {

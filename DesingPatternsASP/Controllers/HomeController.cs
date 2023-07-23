@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DesingPatternsASP.Configuration;
+using DesingPatternsASP.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using SingletonASP.Configuration;
-using SingletonASP.Models;
 using System.Diagnostics;
 using Tools;
 
-namespace SingletonASP.Controllers
+namespace DesingPatternsASP.Controllers
 {
     public class HomeController : Controller
     {
