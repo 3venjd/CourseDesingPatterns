@@ -1,0 +1,3 @@
+Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB; Database=DesingPatterns;Trusted_Connection=True;" Microsoft.EntityFrameWorkCore.SqlServer -OutputDir Models -force
+
+-force is use to overwrite the class with the new context

@@ -1,4 +1,7 @@
+using DesignPatterns.Models.Data;
+using DesignPatterns.Repository;
 using DesingPatternsASP.Configuration;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Tools.Earn;
 
@@ -21,6 +24,13 @@ builder.Services.AddTransient((factory) =>
         builder.Configuration.GetSection("MyConfig").GetValue<decimal>("ForeignExtra")
         );
 });
+
+builder.Services.AddDbContext<DesingPatternsContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
+});
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 var app = builder.Build();
 
