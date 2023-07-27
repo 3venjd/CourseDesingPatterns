@@ -10,4 +10,8 @@ public partial class Beer
     public string? Name { get; set; }
 
     public string? Style { get; set; }
+
+    public Guid? BrandId { get; set; }
+
+    public virtual Brand? Brand { get; set; }
 }

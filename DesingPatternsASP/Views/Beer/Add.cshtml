@@ -1,0 +1,36 @@
+﻿@using DesingPatternsASP.Models.ViewModels
+@model FormBeerViewModel
+
+<form asp-controller="Beer" asp-action="Add" method="post">
+
+	<div class="form-group">
+	<label asp-for="Name"></label>
+	<input class="form-control" asp-for="Name" />
+	<span asp-validation-for="Name" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+	<label asp-for="Style"></label>
+	<input class="form-control" asp-for="Style" />
+	<span asp-validation-for="Style" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+	<label asp-for="BrandId"></label>
+	<select class="form-control" asp-for="BrandId" asp-items="@ViewBag.Brands">
+		<option value="">--- Select a brand ---</option>
+	</select>
+	<span asp-validation-for="BrandId" class="text-danger"></span>
+</div>
+
+<div class="form-group">
+	<label asp-for="otherBrand"></label>
+	<input class="form-control" asp-for="otherBrand" />
+	<span asp-validation-for="otherBrand" class="text-danger"></span>
+</div>
+
+
+	<div class="form-group">
+		<button class="btn btn-primary" type="submit">Save</button>
+	</div>
+</form>
