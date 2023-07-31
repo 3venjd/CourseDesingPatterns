@@ -4,6 +4,7 @@ using DesingPatternsASP.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Tools.Earn;
+using Tools.Generator;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +34,8 @@ builder.Services.AddDbContext<DesingPatternsContext>(options =>
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<GeneratorConcreteBuilder>();
+
 
 var app = builder.Build();
 

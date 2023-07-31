@@ -1,0 +1,1 @@
+["Minerva","Erginger","New Delirium","Heineken","New Beer","Existing Beer"]
